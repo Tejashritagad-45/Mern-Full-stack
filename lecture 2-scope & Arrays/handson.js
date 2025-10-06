@@ -1,3 +1,4 @@
+//===============Array====================//
 const arr =new Array(2);
 console.log(arr);
 
@@ -67,19 +68,6 @@ function prefixSum(nums) {
 //     console.log(result);
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //lecture4 4
 
 
@@ -111,8 +99,6 @@ plus minus
 // x=10;
 
 
-
-
 // /*Scopes*/
 // x=10;
 // let y=5;
@@ -139,54 +125,54 @@ plus minus
 
 
 // //nested array
-let arrr=[1,[1,2,3],4,5,[6,95,71],80]
-console.log(arrr[4][3])
+// let arr=[1,[1,2,3],4,5,[6,95,71],80]
+// console.log(arr[4][3])
 
 
-//2
-let arr1=[1,[1,2,3],4,5,[6,95,71],80];
-for(let i=0;i<4;i++){
-//if(arr[i]-length==)
-    for(let j=1;j<arr,length;j++){
-        //if (arr[i])
-        console.log(arr1)
+// //2
+// let arr1=[1,[1,2,3],4,5,[6,95,71],80];
+// for(let i=0;i<4;i++){
+// //if(arr[i]-length==)
+//     for(let j=1;j<arr,length;j++){
+//         //if (arr[i])
+//         console.log(arr1)
 
-    }
-}
-//
-//Nested arrays 
-const arr22=[1,[2,3,4],5,6,[7,8]];
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i]);
-}
-for(let i=0;i<arr.length;i++){
-    if(arr[i].length==undefined){
-        //this means that element is a number
-        console.log(arr[i]);
+//     }
+// }
+// //
+// //Nested arrays 
+// const arr2=[1,[2,3,4],5,6,[7,8]];
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i].length==undefined){
+//         //this means that element is a number
+//         console.log(arr[i]);
 
-    }else{
-        //since arr[i];is an array ,we will use for loop to print this array
-        for(let j=0;j>arr.length;j++){
-            console.log(arr[i][j]);
-        }
-    }
-}
+//     }else{
+//         //since arr[i];is an array ,we will use for loop to print this array
+//         for(let j=0;j>arr.length;j++){
+//             console.log(arr[i][j];)
+//         }
+//     }
+// }
 // //Approch 2
-for(leti=0;i<arr.length;i++){
-    if(typeof arr[i=="number"])console.log(arr[i]);
-    else{
-        for(let i=0;j<arr[i].length;j++){
-            console.log(arr[i][j]);
-        }
-    }
-}
-//Approch 3
-//isArray
-for(let i=0;i<arr.length;i++){
-    if(Array.isArray(arr[i]))console.log(arr[i]);
-    else{
-        for(let i=0;j<arr[i].length;j++){
-            console.log(arr[i][j]);
-    }
-}
-}
+// for(leti=0;i<arr.length;i++){
+//     if(typeof arr[i=="number"])console.log(arr[i]);
+//     else{
+//         for(let i=0;j<arr[i].length;j++){
+//             console.log(arr[i][j]);
+//         }
+//     }
+// }
+// //Approch 3
+// //isArray
+// for(let i=0;i<arr.length;i++){
+//     if(Array.isArray(arr[i]))console.log(arr[i]);
+//     else{
+//         for(let i=0;j<arr[i].length;j++){
+//             console.log(arr[i][j]);
+//     }
+// }
+// }

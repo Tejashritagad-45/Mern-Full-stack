@@ -11,20 +11,20 @@
 
 //string//
 
-let  str='a';
-console.log(typeof str);
+// let  str='a';
+// console.log(typeof str);
 
 
-str='abc'
-console.log(typeof str);
+// str='abc'
+// console.log(typeof str);
 
-str ="abc";
-console.log(typeof str);
+// str ="abc";
+// console.log(typeof str);
 
 
-str=['a','b','c'];
-console.log(typeof str);
-console.log(typeof str[0]);
+// str=['a','b','c'];
+// console.log(typeof str);
+// console.log(typeof str[0]);
 
 
 
@@ -81,45 +81,45 @@ console.log(typeof str[0]);
 
 //split ->splits the string basedd on given character
 ///console.log(str.split(","));
-const line="Hello welcome to MERN stack course";
-console.log(line.split(""));
+// const line="Hello welcome to MERN stack course";
+// console.log(line.split(""));
 
-//to uppercase 
-console.log("hello".toUpperCase());
+// //to uppercase 
+// console.log("hello".toUpperCase());
 
-const string ="Vaibhav";
-const number =67;
-const bool=true;
-const object ={
-    name:"Vaibhav"
+// const string ="Vaibhav";
+// const number =67;
+// const bool=true;
+// const object ={
+//     name:"Vaibhav"
 
-};
-console.log(string._proto_);
-console.log(number.proto);
-console.log(bool.proto);
-console.log(object.proto);
+// };
+// console.log(string._proto_);
+// console.log(number.proto);
+// console.log(bool.proto);
+// console.log(object.proto);
 
-console.log(Number("123"));
-
-
-//rest operator
-function addStudent(students,studentName){
-    studentName.push(studentName);
-for(let i of studentName){
-    studentName.push(student);
-
-}
-}
-const students=["Vaibhav","piyush","riya"];
-addStudent(students,"abhishek","prateek","surbhi");
-
-//
+// console.log(Number("123"));
 
 
-//spread operator
-const arr1=[1,3,5,5];
-console.log({arr1});
-console.log("spreaded array",...arr1.arr1,67,678,68)
+// //rest operator
+// function addStudent(students,studentName){
+//     studentName.push(studentName);
+// for(let i of studentName){
+//     studentName.push(student);
+
+// }
+// }
+// const students=["Vaibhav","piyush","riya"];
+// addStudent(students,"abhishek","prateek","surbhi");
+
+// //
+
+
+// //spread operator
+// const arr1=[1,3,5,5];
+// console.log({arr1});
+// console.log("spreaded array",...arr1.arr1,67,678,68)
 
 
 

@@ -122,3 +122,12 @@ console.log({sum34});
 // console,log(studentName);
 // if(studentName=="Pratik")throw new Error("Pratik found!!");
 // }
+
+
+let n=346627;
+let digit=0;
+while(n>0){
+    digit++;
+    n=n%10;
+}
+console.log(digit);

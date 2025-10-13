@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <form novalidates>
+        <div>
+        <label for="name">Name</label>
+        </div>
+
+        <div>
+        <input id="name" 
+        type="text" 
+        placeholder="enter your full Name"
+        required
+        autocomplete="name"
+        /></div>
+
+           <div>
+        <label for="email">email</label>
+           </div>
+      
+        <input id="email" 
+        type="email" 
+        placeholder="enter your email"
+         required
+         autocomplete="email"
+        /></div>
+         
+
+        <div>
+        <label for="phone">Phone number</label>
+         </div>
+
+        <div>
+        <input id="number" 
+        type="Phone number"
+        placeholder="enter without country code"
+        required
+        autocomplete="number"
+        /></div>
+
+          <div>
+         <label for="birth">Date of birth</label>
+         </div>
+         <div>
+         <input id="birth" 
+         name="birth"
+         type="date"
+         /></div>
+
+         <div>
+
+         <label for="password"> password</label>
+
+         </div>
+
+
+
+         <div>
+         <input id="password" name ="password" type="password" placeholder="at least 6 digit"/>
+         </div>
+         <label for="country">Country</label>
+         <select name="country" id="country">
+            <option value="">Select a country</option>
+            <option>India</option>
+            <option>china</option>
+            <option>America</option>
+            <option>Swizerland</option>
+         </select>
+         <div>
+         <label for="cities">Cities</label>
+         </div>
+         <div>
+         <select name="cities" id="Cities" multiple size="3">
+            <option value=""> select a country option</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Nagpur</option>
+            <option>banglore</option>
+         </select>
+         </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <h2>List of friuts</h2>
+        <p id="mango" data-product-id="abc1" data-price="10">
+            Mango-<span>10</span></p>
+         <p id="apple"> Apple-<span>40</span></p>   
+         <p id="banan">Banana-<span>30</span></p>
+        
+    </div>
+    <script>
+        let mango=document.getElementById("mango");
+        console.log(mango.dataset.productId);
+        mango.dataset.color="pink";
+        console.log(mango.dataset.color);
+    </script>
+    
+</body>
+</html>

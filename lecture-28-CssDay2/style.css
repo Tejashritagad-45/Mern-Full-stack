@@ -1,0 +1,53 @@
+:root{
+    --btn-color:blue;
+    --bg-color:yellow;
+    --default-color:green;
+}
+*{
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+.navbar a {
+    
+    margin:10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.navbar{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+    /* main axis ke through align karata hai */
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;   
+    /* main axis ke through align karata hai */
+    align-items: center;
+    gap: 10px;
+}
+.card{
+    flex:0 0 250px;
+     border-radius: 8px;
+   }
+.card img{
+    width: 100%;
+    box-shadow: -2px -2px 15px rgba(0,0,0,0.53);
+    background-color: brown;
+}
+
+h1{
+    text-align: center; 
+
+}
+
+

@@ -17,3 +17,5 @@ function factorial(num){
     console.log(fact)
 }
 factorial(5)
+
+

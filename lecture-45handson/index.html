@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function isKey(key,value){
+            localStorage.setItem(key,value);
+            let getItem1=localStorage.getItem(key);
+            if(getItem1===value){
+              console.log(true);
+
+            }else{
+                console.log(false);
+            }
+
+        }
+
+        isKey("name","Amol");
+
+
+       function haskey(key){
+        try{
+            let value=localStorage.getItem(key);
+            if(value!==null){
+                console.log(key,"exist with value", value);
+                return true;
+            }else{
+                console.log("key is not present",key);
+                return false;
+            }
+        }catch(err){
+            console.log(err);
+            return false;
+        }
+       }
+       haskey("key10");
+       haskey("key1");
+
+       
+
+
+        const key="name";
+        const value="Rutu";
+        // const value1="Raj"; update the value
+        localStorage.setItem(key,value); 
+        // store key value pair
+        // we set the value here and give two paranthesis
+         
+        const keys=[
+        localStorage.setItem("key1","value1"),
+        localStorage.setItem("key2","value2"),
+        localStorage.setItem("key3","value3"),
+        localStorage.setItem("key4","value4"),
+        localStorage.setItem("key5","value5"),
+    ]
+
+        // localStorage.removeItem("key");
+        localStorage.removeItem("key1");
+        // localStorage.clear();
+        console.log(localStorage.getItem(key));
+        console.log(localStorage.length);
+       for(let keys in localStorage){
+        console.log(keys);
+       }
+
+       const str="a".repeat(1000*25*1000);
+       localStorage.setItem("bigdata",str);
+       console.log(getItem,("bigdata"));
+    //   therefore we use this in  tryCatch
+
+
+
+    //    limitation
+    // we not store more data 
+    // we store data only form of a string object and Array have diffrent method
+    // set-item increase a storage when the limit is exceed then they give a error QuotaExceededError;
+    // if we avoid these error we use a tryCatch.
+
+    //*
+    // when the error is occure or we use a try catch then the the b=next code will execute do stop there like a without using a tryCatch;
+    
+    // in try catch we write code in try and error in catch;
+    // try {
+        
+    // } catch (error) {
+        
+    // }
+
+
+    // localstorage is syncronous in nature;
+    // synchronus: sync is code is run line by line first run sirst line then run second
+    // in more freqent write operation affect on performance;
+
+
+    </script>
+</body>
+</html>

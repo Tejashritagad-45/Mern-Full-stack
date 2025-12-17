@@ -1,0 +1,207 @@
+<!-- keyword
+ ChatGPT said:
+
+A keyword is a special reserved word in a programming language that has a fixed meaning and cannot be used as a variable or function name. 
+let const var class this -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="great-grand-Parent">
+ <div class="greatParent">
+    <div class="parent">
+        <div class="parent2">
+            <div class="child2"> child2</div>
+             </div>
+    <div class="child">child</div>
+        <div class="child3">child3</div>
+   
+    </div>
+    </div>
+    </div>
+
+    <div class="box"></div>
+    <div class="circle"></div>
+
+      
+    <script>
+        const div1=document.querySelector(".box");
+       console.log( div1.matches(".box"));//true
+       console.log(div1.matches(".circle"));//false
+    //   matches give a true or false value matches is a method give if the element is match the css selector then give a true or not give a false
+    console.log(this);
+    // this is a widow obj;
+    // this is keyword so keyword not have a datatype this 
+    // this always refers to an object but which objects is depend on how function is call;
+
+
+    // lexical scope=lexical scope is variable can acess his own block or inside a block not acess outside a block;
+    // lexical=by locatin by place
+
+    function outer(){
+        let a=10;
+
+        function inner(){
+            console.log(a);
+
+        }
+        inner();
+    }
+    outer();
+
+
+
+//     function outer1() {
+//      let x = 50;
+     
+// }
+
+// console.log(x);  
+// *this function is not go acording to lexical scope;
+
+
+// function greetMe(greeting){
+//     console.log(greeting + "" + this.name);
+// }
+// const person={
+//     name:"vaibhav",
+
+// }
+// greetMe.call(person," hello ");
+// greetMe("hii");
+
+
+function greetMe(greeting){
+    console.log("hello this is my age"+ this.age +this.name);
+
+    console.log("my name is "+this.name +"and my price is a"+this.price);
+}
+const person1={
+    
+   age:20,
+   name:"teju",
+}
+const product={
+    name:"bottle",
+    price:12,
+}
+greetMe.call(person1,product);
+
+//*it will call greetME this function with new this as person object 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const greatParent=document.querySelector(".greatParent");
+        const parent=document.querySelector(".parent");
+        const child=document.querySelector(".child");
+
+        greatParent.addEventListener("click",(event)=>{
+        
+        //   event.stopImmediatePropagation();
+        // event.stopPropagation();
+         
+       console.log("target", event.target);
+       console.log("CurrentTraget", event.currentTarget);
+
+      console.log("greatparent is clicked");
+
+        },
+        // {capture:true}
+    );
+
+    parent.addEventListener("click",(event)=>{
+          event.stopImmediatePropagation();
+        //  event.stopPropagation();
+
+        console.log("parent is clicked")
+
+    },
+    // {capture:true}
+);
+
+child.addEventListener("click",(event)=>{
+    //   event.stopPropagation();
+    //   event.stopImmediatePropagation();
+    console.log("child is clicked third")
+
+},
+// {capture:true}
+);
+
+child.addEventListener("click",(event)=>{
+//      event.stopPropagation();
+//    event.stopImmediatePropagation();
+
+   
+    console.log("child is clicked second")
+
+},
+// {capture:true}
+);
+
+
+child.addEventListener("click",(event)=>{
+//    event.stopPropagation();
+//    event.stopImmediatePropagation();
+
+   
+    console.log("child is clicked first")
+
+},
+// {capture:true}
+);
+
+
+
+
+     </script>
+     <script src="handsonthis.js"></script>
+</body>
+</html>
+
+<!--  stopPropagation = is a property use to stop the next flow of events.if class is same then propagation is not work -->
+  <!-- stopImiagitePropagtion= this proprty is stop the  next flow of event or also stop the same class flow-->
+
+
+  <!-- event.target=* jo element ha trigger hoto event lavlyavr tyla event.target element mhnatat  -->
+   <!-- currentTarget=* jis element per hsm event lagate  hai use currentelement kahate hai -->
+
+   <!-- event,target is a deepest element or last child of parent -->
+
+   <!-- Closet is a give closest element of the element if , first he check the self then he check the ancestors -->
+
+
+   <!-- Matches matches rerurn a boolean value
+    give a match element in the selector -->
+
+
+
+
+   <!-- we acess parent from child 
+    container.addeventListner("click"(event)=>{
+    event.target.closet(".product")}) -->
+
+
+    <!-- this a golbal window keyword -->

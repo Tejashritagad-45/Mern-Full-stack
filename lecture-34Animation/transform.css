@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+.container{
+    padding: 100px;
+
+}
+
+.container .box{
+    width: 100px;
+    height:100px;
+    margin-bottom: 50px;
+    background-color: aqua;
+}
+body:hover .box{
+    /* transform: scale(1.2); */
+    /* transform: scale(0.4,1.5);  0.4 gets applied in x-axis(horizantaly) and 1.5 hets applied y-axis(verticaly */
+    /* transform: rotate(45deg);  will rotate clockwise by 45 deg */
+    transform: rotate(-45deg); /*will rotate anticlokwise by -45 deg*/
+    /* transform: rotate(0.5turn);1 turn=360deg and rest behaviour is same */
+    transform: skew(30deg,45deg);/*skew in both (X,Y)direction*/
+    transform: translate(100%);
+     transform: translate(-50%,200%);
+     transform: rotate(90deg)translate(200px);
+  /* if X is -ve left
+          x is +ve right
+          y is -ve down
+          y is +ve up */
+
+
+          /* Note:we can combine all the transform attibutes  */
+          /* Note:we try to find understand these two transform */
+          transform: rotate(90deg)translate(200px);
+
+
+   
+}

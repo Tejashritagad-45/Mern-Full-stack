@@ -1,0 +1,33 @@
+
+body{
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 80vw;
+    height:60vh;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows:100px 100px 100px ;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color:red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple ;
+}

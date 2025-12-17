@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+}
+   body{
+    background: linear-gradient(rgb(6, 6, 70),rgb(96, 10, 24));
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+
+.card{
+    width: 470px;
+    height: 630px;
+    background-color: white;
+    margin: 50px auto;
+    border: 10px;
+    border-image:linear-gradient(rgb(35, 239, 17),rgb(96, 10, 24));
+    border-radius: 10px;
+    
+}
+
+.curved-image img{
+    margin-right: 30px;
+    width:470px;
+    clip-path: ellipse(75% 100% at 0% 10%);
+    display: block;
+}
+
+.content{
+    margin:20px;
+    padding: 10px;
+  
+}
+.content p{
+    font-weight: bold;
+    color: rgb(95, 95, 112);
+    font-size: 1.1rem;
+}
+
+.info{
+    display:flex;
+    /* margin: 5px; */
+    padding: 30px;
+    gap:10px;
+    border: 1px solid rgb(228, 224, 224);
+    height: 53px;
+    width: 406px;
+}
+
+
+.info img{
+    height: 50px;
+    width: 50;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.content1 p{
+    font-weight: bold;
+    color: rgb(95, 95, 112);
+    
+}

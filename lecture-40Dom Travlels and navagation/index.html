@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="great-grand-parent">
+     <div class="grand-parent">
+       <div class="parent">
+          <div class="child">child</div>
+       </div>
+     </div>
+    </div>
+
+    
+    <div class="New-parent">
+        <div class="new-parent1"></div>
+        <div class="new-parent2"></div>
+        <div class="new-parent3"></div>
+        <div class="new-parent4"></div>
+    </div>
+    <div class="card">
+      <p class="title">shoes</p>
+      <div class="buttons">
+        <button class="deletbtn">delet</button>
+        <button class="editbtn">edit</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+      console.log(Math.floor(Math.random()*100000));
+        //getting the parent
+        const child1=document.querySelector(".child")
+        console.log(child1.parentElement);
+
+        const parent1=document.querySelector(".parent");
+        console.log(parent1.parentElement);
+
+        const  grandpa=document.querySelector(".grand-parent");
+        console.log(grandpa.parentElement);
+          //getting the parent of body 
+         console.log(document.body.parentElement);
+           
+         //getting the parent of html which is null beacause html is a root elemnt
+         console.log(document.body.parentElement.parentElement);
+          
+         //select th ancstor from current node to the root node 
+         console.log(child1.closest(".parent"));
+
+
+         console.log(child1.closest("div"));
+
+
+         const childs=document.querySelector(".child");
+         childs.className="Accio";
+        //  console.log(childs.grand-parent.parentElement);
+
+        // finding the parents 
+
+          let Element=childs
+          while(Element.parentElement!==document.body){
+            Element=Element.parentElement
+          }
+
+          Element.classList.add("accio-job");
+          console.log(Element);
+
+
+
+
+          //childNodes children
+
+          const parent2=document.querySelector(".New-parent");
+          console.log(parent2.childNodes);
+           console.log(parent2.children);
+           console.log(parent2.firstElementChild);
+           console.log(parent2.firstChild);
+
+
+           //adding a class="acciobuddy" in the  first child of body
+        //    const divEle=document.querySelector(".great-grand-parent")
+        //    const div1=document.createElement("div");
+        //    divEle.insertBefore("div1")
+        //    div1.classList.add("acciobuddy");
+        //    console.log(div1);
+
+         //adding a class="acciobuddy" in the  first child of body
+
+        document.body.children[0].classList.add("acciooj")
+
+        //itreating through all child;
+        for(let child of parent2.children){
+            console.log(child.className);
+        }
+
+          
+         
+        // sibling
+
+        //printing all the sibling of child
+       
+
+
+        //
+        const delbtn=document.querySelector(".deletbtn");
+        delbtn.addEventListener("click",(e)=>{
+          e.preventDefault();
+
+          delbtn.closest(".card").remove();//closet give a ancestor we can acesss his ancestor to give his name
+          
+        })
+        
+  </script>
+</body>
+</html>

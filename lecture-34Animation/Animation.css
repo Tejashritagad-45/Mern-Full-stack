@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100px;
+    width:100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 300px auto;
+    border-radius: 50px;
+    animation-name: Animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+}
+
+.Animation1{
+    animation-delay: 3s;
+}
+.Animation2{
+    animation-delay: 3s;
+}
+.Animation3{
+    animation-delay: 3s;
+}
+
+.Animation4{
+    animation-delay: 3s;
+}
+
+.Animation5{
+    animation-delay: 3s;
+}
+
+
+@keyframes Animation {
+    
+from{
+    transform:translateY(100px) ;
+}
+    
+    
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grand-parent">grand-parent
+
+    <div class="parent">parent
+    <div class="child">child</div>
+    <div class="child1">child1
+    <div class="child2">child2</div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        const child2=document.querySelector(".child2");
+        console.log(child2.parentElement);
+
+        const parent=document.querySelector(".parent");
+        console.log(parent.parentElement);//accessparent
+        console.log(parent.children);//access children
+        console.log(parent.children[0]);//access first child
+
+        const grandpa=document.querySelector(".grand-parent");
+        console.log(grandpa.parentElement);
+
+        console.log(document.body.parentElement);
+        // body parent is a html
+
+        console.log(document.body.parentElement.parentElement);
+        // html not have a parent html is root Element
+
+        // give a closest Element first check  itself and then his ancestor 
+        console.log(child2.closest(".parent")); 
+        console.log(child2.closest(".child1"));
+
+        console.log(parent.closest(".grand-parent"));
+
+
+
+        // add a class
+        const parent1=document.querySelector(".parent");
+        parent1.className="Acciojob";
+
+        let Element=child2;
+        while(Element.parentElement!==document.body){
+            Element=Element.parentElement;
+        }
+         console.log(Element);
+
+        
+
+
+
+    </script>
+</body>
+</html>

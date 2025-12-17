@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 50px;
+    transition-property :margin;
+    transition-timing-function: ease-in-out;
+    transition-duration:4s;
+    
+}

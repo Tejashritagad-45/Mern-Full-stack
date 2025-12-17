@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(93, 28, 5);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: flex-start;
+    padding: 100px;
+    border-right: 3px solid;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+
+#setting{
+    position: fixed;
+    text-align: left;
+    bottom: 20px;
+    left:10px;
+    width: calc(20% - 30px);
+    text-decoration: none;
+
+}
+
+.content{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1.5fr;
+}
+
+.Suggestions{
+    align-content: center;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: rgb(209, 36, 123); */
+    align-items: center;
+     gap: 25px;
+    
+}
+
+
+.suggestion{
+    /* background-color: rgb(238, 232, 235); */
+    border: 1px solid white;
+    width: 200px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+   
+}
+
+.title{
+    /* background-color: red; */
+    display: flex;
+    font-weight:900;
+    /* text-align: center; */
+    margin: 10px auto;
+    font-size: 2em;
+}
+
+
+.chat{
+    
+    display:flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+.chat .text{
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    /* height: 50px; */
+}
+/* child ko access karne ke liye  */
+
+.chat .button{
+    padding:10px 20px;
+    margin:px;
+    border: 1px solid white;
+    height: 30px;
+    border-radius: 10px;
+    background-color: inherit;
+
+
+}

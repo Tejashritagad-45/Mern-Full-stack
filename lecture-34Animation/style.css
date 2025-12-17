@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+.container{
+    padding: 100px;
+
+}
+
+.container .box{
+    width: 100px;
+    height:100px;
+    margin: 50px;
+    background-color: aqua;
+}
+body:hover .box{
+    width:700px;
+    background-color: rgb(178, 130, 59);
+}
+
+.transition{
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.liner{
+     transition-timing-function:linear;
+}
+.ease-in{
+     transition-timing-function: ease-in;
+
+}
+.ease-out{
+     transition-timing-function: ease-out;
+
+}
+.ease-in-out{
+     transition-timing-function: ease-in-out;
+
+}
+.step-end{
+     transition-timing-function: step-end;
+
+}
+.step-start{
+     transition-timing-function: step-start;
+
+}
+.steps{
+     transition-timing-function: steps;
+
+}

@@ -1,0 +1,45 @@
+.container{
+    background-color: beige;
+    width:70vw;
+    height:150vh
+
+}
+
+.box{
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(156, 136, 136);
+    border:2px solid white;
+}
+
+.box.box1{
+    background: linear-gradient(to right,rgb(231, 109, 109), rgb(83, 83, 225));
+}
+
+.box.box2{
+    background: linear-gradient(120deg,brown,rgb(70, 21, 218),yellow);
+}
+
+.box.box3{
+    background: linear-gradient(blue,rgb(225, 11, 168),red);
+}
+
+.box.box4{
+    background:radial-gradient(red,yellow,rgb(61, 61, 172));
+}
+
+.box.box5{
+    background: repeating-radial-gradient(blue 15px,red 30px);
+}
+
+.box.box7{
+    background:conic-gradient( rgb(235, 18, 18),
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red,yellow,green,violet,blue,indigo,brown,rgb(66, 54, 54))
+}

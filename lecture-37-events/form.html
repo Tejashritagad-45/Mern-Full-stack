@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>contact us</h1>
+        <form class="contact-us">
+            <div class="name">
+                <label for="name">full Name:</label>
+                <input class="input1"type="text" id="name" placeholder="full Name">
+            </div>
+            <div class="mobile">
+                <label for="mobile">mobile number:</label>
+                <input class="input2" type="number" id="mobile" placeholder="mobile number">
+            </div>
+            <div class="gender">
+                <label for="Gender">Gender:</label>
+                <br>
+                <label for="Male">Male</label>
+                <input class="input3" type="radio" id="MAle"name="gender" >
+             
+                <label for="Feamle">Female</label>
+                <input class=input4 type="radio" id="Female" name="gender" >
+            </div>
+
+            <div class="consent">
+                <label for="consent">Agree to TnC </label>
+                <input class="input6" type="checkbox" id="consent">
+            </div>
+            <div class="city">
+                <select class="city1" id="city">
+                    <option value="">select city</option>
+                    <option>pune</option>
+                    <option>mumbai</option>
+                    <option>nashik</option>
+                    <option>luknow</option>
+                    <option>hyd</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button class="button1">submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

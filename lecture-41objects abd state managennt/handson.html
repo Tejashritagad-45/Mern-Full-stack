@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            margin:200px auto;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button{
+            font-size: 1.5rem;
+            border: 1px solid rgb(14, 14, 13);
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <button>show all projects</button>
+    </div>
+    <!-- <div class="card">
+
+        <div class="title">Product 1</div>
+
+        <div class="price">₹24.99</div>
+
+        <button>Add to Cart</button>
+
+      </div> -->
+
+    <script>
+        const product=[
+        {
+            title:"product1",
+            price:23,
+        },
+
+        {
+            title:"product2",
+            price:40,
+
+        },
+        {
+
+        title:"product3",
+        price:60,
+        },
+        { 
+            title:"product",
+            price:50,
+
+
+        },
+        {
+            title:"product",
+            price:40,
+        }
+
+
+    ]
+     const gallery1=document.querySelector(".gallery");
+     const button1=document.querySelector("button");
+     button1.addEventListener("click",(e)=>{
+        e.preventDefault();
+  
+      for(let product1 of product){
+    const mydiv=document.createElement("div");
+    mydiv.classList.add("card");
+    // let products=product
+    mydiv.innerHTML=`  <div class="title">${product1.title}</div>
+
+        <div class="price">${product1.price}</div>
+
+        <button>Add to Cart</button>`
+        gallery1.appendChild(mydiv);
+      }
+});
+    
+
+    
+
+    </script>
+</body>
+<!-- <div class="card">
+
+        <div class="title">Product 1</div>
+
+        <div class="price">₹24.99</div>
+
+        <button>Add to Cart</button>
+
+      </div> -->
+
+</html>

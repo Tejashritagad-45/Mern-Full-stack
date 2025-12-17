@@ -1,0 +1,23 @@
+h1{
+    font-size: smaller;
+   text-align: center;
+}
+/* element selector */
+h1{
+    background-color:yellow;
+}
+
+/* class selector */
+.para{
+    background-color: aquamarine;
+}
+
+/* id selector */
+#article{
+    color: brown;
+}
+
+/* group selector */
+h1,h2{
+    color:blue;
+}

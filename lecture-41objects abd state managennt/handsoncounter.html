@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 100px auto;
+            padding: 100px;
+            /* display: flex;
+            justify-content: center;
+            flex-direction: column; */
+        }
+    </style>   
+</head>
+<body>
+    
+  
+    <div class="button">
+        <h1>counter</h1>
+        <div>
+        <p>0</p>
+        <span>level:0</span>
+        <button id="inc">increase</button>
+        <button id="dec">decrease</button>
+        </div>
+        <br>
+        <hr>
+        <span>select your theme</span>
+       <button id="dark">dark</button>
+       <button id="light">light</button>
+        </div>
+    </div>
+   
+    <script>
+        const state={
+            theame:"dark",
+            level:0,
+        }
+        let counter={
+            count:0,
+            level:0,
+            elements:{
+                increase:document.querySelector("#inc"),
+                decrease:document.querySelector("#dec"),
+                 showcount:document.querySelector("p"),
+                 darktheamebtn:document.querySelector("#dark"),
+                 lighttheamebtn:document.querySelector("#light"),
+                 showlevel:document.querySelector("div > span"),
+
+            },
+            updatelevel(newcount){
+                if(newcount>10){
+                    this.level=3;
+                }else if(newcount>5){
+                    this.level=2;
+               }else if(newcount>0){
+                    this.level=1;
+                   
+                }else{
+                    this.level=0;
+                   
+                }
+                 this.elements.showlevel.textContent="level:"+this.level;
+            
+    
+
+
+            },
+
+            updateCount(newcount){
+                 this.elements.showcount.textContent=newcount;
+                 this.updatelevel(newcount);
+
+                
+            },
+            events(){
+               this.elements.increase.addEventListener("click",(e)=>{
+            e.preventDefault();
+           this.count++;
+            this.updateCount(count);
+
+
+        }),
+          this.elements.addEventListener("click",(e)=>{
+            e.preventDefault();
+            this.count--;
+           this.updateCount(count);
+         });
+
+
+                
+
+            },
+            
+        };
+
+
+
+
+
+
+
+
+
+        // let count=0;
+        //  const showcount=document.querySelector("p")
+        // const increase=document.querySelector("#inc");
+        // increase.addEventListener("click",(e)=>{
+        //     e.preventDefault();
+        //     count++;
+        //     showcount.textContent=count;
+
+
+        // })
+        // const decrease=document.querySelector("#dec");
+        //  decrease.addEventListener("click",(e)=>{
+        //     count--;
+        //     showcount.textContent=count;
+        //  })
+
+    </script>
+</body>
+</html>

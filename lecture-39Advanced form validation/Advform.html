@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="" name="password"  maxlength="10"/>
+    <br>
+    <input type="date" id="" name=""/>
+    <br>
+    <input type="time"/>
+    <br>
+      <input type="checkbox" id=""/>
+      <input type="checkbox" id=""/>
+      <input type="checkbox" id=""/>
+      <input type="checkbox" id=""/>
+    <br>
+    <input type="radio" id="" name="macq1" value="option A"/>
+    <input type="radio" id="" name="macq1" value="option B "/>
+    <input type="radio" id="" name="macq1"value="option  C"/>
+    <input type="radio" id="" name="macq1"value="option  D"/>
+     <br>
+    
+    <input type="radio" id="" name="macq2"value="option A"/>
+    <input type="radio" id="" name="macq2"value="option B"/>
+    <input type="radio" id="" name="macq2"value="option C"/>
+    <input type="radio"  id="" name="macq2"value="option D"/>
+    
+    
+    <br>
+    <select name="" id="">
+      <option value="">select city</option>
+      <option>hyd</option>
+      <option>mumbai</option>
+      <option>baner</option>
+    </select>
+      <br>
+     
+     <select name="" id="" multiple="true" size="3">
+      <option value="">multiple Option</option>
+      <option>hyd</option>
+      <option>mumbai</option>
+      <option>baner</option>
+    </select>
+    <button>submit</button>
+
+    <script>
+        const submitbtn=document.querySelector("button");
+        submitbtn.addEventListener("click",()=>{
+            const inputs={};
+             inputs.passwords=document.querySelector("[type=password]").value
+             inputs.dates=document.querySelector("[type=date]").value
+             inputs.times=document.querySelector("[type=time]").value
+             inputs.allcheckbox=document.querySelectorAll("[type=checkbox]:checked");
+             inputs.radiobtn1=document.querySelector("[name=macq1]:checked")?.value;
+             inputs.radiobtn2=document.querySelector("[name=macq2]:checked")?.value;
+             inputs.selectedoption=document.querySelector("select").value;
+             const multipleSelection=document.querySelector("[multiple=true]").options;
+               inputs.multipleSelectionOption=Array.from(multipleSelection)
+               .filter((ele)=>ele.selected)
+               .map((ele)=>ele.value);
+              
+              //  array=[1,2,3,4,5];
+            //  console.log({array});
+
+
+      
+        
+            console.log(inputs);
+        })
+    </script>
+    
+</body>
+</html>

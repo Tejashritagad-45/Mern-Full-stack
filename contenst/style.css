@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.card{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	margin:50px auto;
+	padding:20px;
+	gap:10px;
+	}
+
+
+.card1{
+	width:350px;
+	height:400px;
+	background-color:beige;
+	
+
+}
+
+.card2{
+	width:350px;
+	height:400px;
+	background-color:beige;
+}
+
+.card3{
+	width:350px;
+	height:400px;
+	background-color:beige;
+}
+
+.card4{
+	width:350px;
+	height:400px;
+	background-color:rgb(228, 78, 78);
+}
+
+.img{
+	width:150px;
+	height:150px;
+    background-color: blue;
+
+}
+.para{
+	font-size:1rem;
+}
+
+@media(max-width:600px){
+	.card{
+	    flex-direction:column
+	}
+
+}
+

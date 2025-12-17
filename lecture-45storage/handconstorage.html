@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        localStorage.setItem("name","Rani")
+        const key=prompt("enter the key ");
+        const value=prompt("enter the value ");
+        localStorage.setItem(key,value);
+        console.log(`the value at ${key} and the ${localStorage.getItem(key)}`);
+        localStorage.removeItem(key);
+        localStorage.removeItem(value);
+
+
+        
+        localStorage.setItem("key1","value1");
+        localStorage.setItem("key2","value2");
+        localStorage.setItem("key3","value3");
+        localStorage.setItem("key4","value4");
+
+         console.log(localStorage.getItem(key1))
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 193, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* margin: 100px; */
+}
+
+.box{
+    width:100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50px;
+   
+}
+
+body:hover .box{ 
+    position: absolute; 
+   
+     margin-left:70%;
+    margin-bottom:70%;
+
+ }
+
+ .box{
+    transition-property :margin;
+    transition-timing-function: ease-in-out;
+    transition-duration:4s;
+    
+} 

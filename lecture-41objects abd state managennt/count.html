@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 200px;
+       }
+
+    </style>
+</head>
+<body>
+  <div>
+    <h1>counter</h1>
+    <p>0</p>
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+  </div>
+  <script>
+      const counter={
+        Element:{
+           increasebtn:count.querySelector("#increase"),
+           decreasebtn:document.querySelector("#decrease"),
+           showCount:document.querySelector("p"),
+        },
+         eventlister:{
+            event(){
+                increasebtn.addEventListener("click",(e)=>{
+                count++;
+                showCount.textContent=count
+
+       }),
+
+    
+         decreasebtn.addEventListener("click",(e)=>{
+            count--;
+            showCount.textContent=count
+
+         })
+              
+         },
+
+     }
+        
+    }
+        
+      
+
+
+
+
+
+
+
+
+
+    // let count=0;
+    // const  increasebtn=document.querySelector("#increase");
+    // const  decreasebtn=document.querySelector("#decrease");
+    // const  showCount=document.querySelector("p");
+
+    // increasebtn.addEventListener("click",(e)=>{
+    //     count++;
+    //     showCount.textContent=count
+
+    // });
+
+    
+    // decreasebtn.addEventListener("click",(e)=>{
+    //     count--;
+    //     showCount.textContent=count
+
+        
+    // })
+  </script>
+</body>
+</html>

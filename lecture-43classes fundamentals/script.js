@@ -175,3 +175,28 @@ const guestuser=User.guest();
 
 //methods can also be private
 
+
+class Cars{
+    constructor({brand,model,year}){
+        this.brand=brand;
+        this.model=model;
+        this.year=year;
+
+    }
+    start(){
+        console.log(`${this.brand},${this.model} is started`);
+    }
+
+    getyear(currentyear){
+        return currentyear-this.year;
+    }
+}
+
+const car=new Cars({brand:"toyto",model:"Bmw",year:2020});
+
+car.start();
+// console.log(car);
+
+console.log(car.getyear(2025));
+
+

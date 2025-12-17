@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width: 100vw;
+            border: 1px solid #000000;
+            background-color: black;
+           }
+
+            .box1{
+                height: 30%;
+                width: 50%;
+                background-color: white;
+              border-radius: 20px;
+                /* margin: 20px; */
+                 margin:10px auto;
+            }
+
+            .box2{
+                height: 30%;
+                width: 50%;
+                background-color: azure;
+                
+                border-radius: 10px;
+              
+                /* margin: 20px; */
+                 margin:10px auto;
+            }
+            h1{
+                color: white;
+                margin: 10px;
+                padding: 20px;
+
+            }
+            button{
+                width: 200px;
+                height: 30px;
+                border-radius: 10px;
+                
+                
+            }
+
+            p{
+                font-weight: bold;
+                font-size: 1rem;
+                margin:20px;
+                padding: 50px;
+            }
+            #lable{
+                padding: 10px;
+                margin: 10px;
+            }
+        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Timer:00:00</h1>
+        <button>start</button>
+        <div class="box1">
+            <p>hello ji! how are you?</p>
+        </div>
+        <div class="box2">
+            <label  id="label" for="game">Type here:</label>
+            <textarea name="" id="game" rows="10" cols="100" disabled></textarea>
+        </div>
+         
+    </main>
+
+
+    <script>
+        const startbtn=document.querySelector("button");
+        const h1ele=document.querySelector("h1");
+        const pEle=document.querySelector("p");
+        const textarea=document.querySelector("#game");
+        let count=0;
+        let timer=null;
+
+
+        startbtn.addEventListener("click",(e)=>{
+            document.querySelector("#game").disabled=false;
+            if (timer!==null) return;
+            count=0;
+            timer=setInterval(()=>{
+                count++;
+                
+                // let hr=Number(Math.floor(count/3600)).padstart(2,"0");
+                let min=String(Math.floor(count/60)).padStart(2,"0");
+                let sec=String(count%60).padStart(2,"0");
+
+                h1ele.textContent=`Timer:${min}:${sec}`;
+            },1000);  
+
+            
+
+        });
+
+          textarea.addEventListener("input",(e)=>{
+            
+            if(textarea.value.trim()===pEle.textContent.trim()){
+                pEle.textContent="complete task ✅";
+                clearInterval(timer);
+                timer=null;
+                textarea.disabled=true;
+
+            }
+            
+          });
+    </script>
+</body>
+    
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the class</h1>
+    <button> click to enter the class</button>
+    <span></span>
+    
+
+    <h1>Timer</h1>
+    <h2>0</h2>
+    <button>start</button>
+    <button>stop</button>
+   <script>
+    const btn=document.querySelector("button");
+     const span =document.querySelector("span");
+    btn.addEventListener("click",(e)=>{
+        e.preventDefault();
+       
+        span.textContent="welcome to the class";
+        setTimeout(()=>{
+            span.remove();
+        },1000)
+
+        // when I want to do the spaecific task after some time execute then we use a setTimeout
+
+    });
+    console.log("hello");//code execute whithout hurdal
+    alert("alerting");//bolcking the below code 
+    console.log("hello");//run after the we give ok to the to the alert
+
+
+    const startbtn=document.querySelector("button:nth-of-type(2)");
+    const stopbtn=document.querySelector("button:last-of-type");
+    const h2Ele=document.querySelector("h2");
+    let count=0;
+    let timer=null;
+
+    startbtn.addEventListener("click",()=>{
+        timer=setInterval(()=>{
+            count++;
+            h2Ele.textContent=count;
+        },1000);
+    });
+    stopbtn.addEventListener("click",()=>{
+        console.log(timer);
+        clearInterval(timer);
+    });
+
+    // docs of Asyn
+
+
+   </script> 
+</body>
+</html>

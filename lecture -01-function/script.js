@@ -1,6 +1,6 @@
 //function 
 //reuse some line of code -for loop 
-/*kuch vakue pass karke kuch operation kar sakte hai customise any function throw
+/*kuch value pass karke kuch operation kar sakte hai customise any function throw
 if we want to use some code repeatadly -for loop 
 whenever we need we can have a function of that call it 
 block of code that performs specific task -true 
@@ -53,14 +53,14 @@ console.log("Bye Teju")
 -parameter
 */
 function greetUser(userName){
-    console.log("Hello "+userName +" how are you")
+    console.log("Hello "+ userName +" how are you")
 }
-greetUser("Vaibhav");
+   greetUser("Vaibhav");
 greetUser("Rani");
 
 
 function greetUser1(firstName,LastName){
-    console.log("Hiii.."+ firstName,LastName)
+    console.log("Hiii.."+ firstName+LastName)
 
     }
     greetUser1("Teju","Tagad")
